@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A47D17921C2AB9F003ACD4A /* passiveStructures.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D17821C2AB9F003ACD4A /* passiveStructures.txt */; };
+		1A47D17B21C2AD2A003ACD4A /* simplePresent.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D17A21C2AD2A003ACD4A /* simplePresent.txt */; };
+		1A47D17D21C2AFB0003ACD4A /* presentPerfect.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D17C21C2AFB0003ACD4A /* presentPerfect.txt */; };
+		1A47D17F21C2B11B003ACD4A /* modalsI.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D17E21C2B11B003ACD4A /* modalsI.txt */; };
+		1A47D18121C2B14F003ACD4A /* modalsII.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D18021C2B14F003ACD4A /* modalsII.txt */; };
+		1A47D18321C2B24E003ACD4A /* presentContinuous.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D18221C2B24D003ACD4A /* presentContinuous.txt */; };
+		1A47D18521C2B27D003ACD4A /* simplePast.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D18421C2B27D003ACD4A /* simplePast.txt */; };
+		1A47D18721C2B581003ACD4A /* pastperfect.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D18621C2B581003ACD4A /* pastperfect.txt */; };
+		1A47D18921C2B5AA003ACD4A /* pastCon.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D18821C2B5AA003ACD4A /* pastCon.txt */; };
+		1A47D18B21C2B5DC003ACD4A /* pastPerfectCon.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D18A21C2B5DC003ACD4A /* pastPerfectCon.txt */; };
+		1A47D18D21C2B636003ACD4A /* simpleFuture.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D18C21C2B636003ACD4A /* simpleFuture.txt */; };
+		1A47D18F21C2B65D003ACD4A /* futurePerfect.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D18E21C2B65D003ACD4A /* futurePerfect.txt */; };
+		1A47D19121C2B684003ACD4A /* futureCon.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D19021C2B684003ACD4A /* futureCon.txt */; };
+		1A47D19321C2B6A7003ACD4A /* futurePerfectCon.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D19221C2B6A7003ACD4A /* futurePerfectCon.txt */; };
+		1A47D19521C2B790003ACD4A /* presentPerfectCon.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D19421C2B790003ACD4A /* presentPerfectCon.txt */; };
+		1A47D19721C2B9BD003ACD4A /* modalsIII.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D19621C2B9BD003ACD4A /* modalsIII.txt */; };
+		1A47D19921C2B9E4003ACD4A /* modalsIV.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D19821C2B9E4003ACD4A /* modalsIV.txt */; };
+		1A47D19B21C2BA01003ACD4A /* modalsV.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D19A21C2BA01003ACD4A /* modalsV.txt */; };
+		1A47D19D21C2BA23003ACD4A /* usedToWould.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D19C21C2BA23003ACD4A /* usedToWould.txt */; };
+		1A47D19F21C2BA48003ACD4A /* otherModals.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D19E21C2BA48003ACD4A /* otherModals.txt */; };
+		1A47D1A121C2CA72003ACD4A /* if.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1A021C2CA72003ACD4A /* if.txt */; };
+		1A47D1A321C2CAA1003ACD4A /* wish.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1A221C2CAA1003ACD4A /* wish.txt */; };
+		1A47D1A521C2CB54003ACD4A /* noun.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1A421C2CB54003ACD4A /* noun.txt */; };
+		1A47D1A721C2CBF9003ACD4A /* reportedSpeech.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1A621C2CBF9003ACD4A /* reportedSpeech.txt */; };
+		1A47D1A921C2CC5E003ACD4A /* gerund.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1A821C2CC5E003ACD4A /* gerund.txt */; };
+		1A47D1AB21C2CC80003ACD4A /* infinitive.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1AA21C2CC80003ACD4A /* infinitive.txt */; };
+		1A47D1AD21C2CDA8003ACD4A /* adj.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1AC21C2CDA8003ACD4A /* adj.txt */; };
+		1A47D1AF21C2CDC3003ACD4A /* adv.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1AE21C2CDC3003ACD4A /* adv.txt */; };
+		1A47D1B121C2CDE5003ACD4A /* par.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1B021C2CDE5003ACD4A /* par.txt */; };
+		1A47D1B321C2CE07003ACD4A /* comp.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1B221C2CE07003ACD4A /* comp.txt */; };
+		1A47D1B521C2CE6B003ACD4A /* nouns.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1B421C2CE6B003ACD4A /* nouns.txt */; };
+		1A47D1B721C2CE8B003ACD4A /* pronouns.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1B621C2CE8B003ACD4A /* pronouns.txt */; };
+		1A47D1B921C2CEA8003ACD4A /* articles.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1B821C2CEA8003ACD4A /* articles.txt */; };
+		1A47D1BB21C2CEC1003ACD4A /* quan.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1BA21C2CEC1003ACD4A /* quan.txt */; };
+		1A47D1BD21C2CF13003ACD4A /* relative.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1BC21C2CF13003ACD4A /* relative.txt */; };
+		1A47D1BF21C2CF2D003ACD4A /* adverb.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1BE21C2CF2D003ACD4A /* adverb.txt */; };
+		1A47D1C121C2CF7B003ACD4A /* conj.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1C021C2CF7B003ACD4A /* conj.txt */; };
+		1A47D1C321C2CFAF003ACD4A /* prepo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1C221C2CFAF003ACD4A /* prepo.txt */; };
+		1A47D1C521C2D048003ACD4A /* phrasal.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1C421C2D048003ACD4A /* phrasal.txt */; };
+		1A47D1C721C2EB7A003ACD4A /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47D1C621C2EB7A003ACD4A /* ViewController5.swift */; };
+		1A47D1C921C2EBB0003ACD4A /* ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47D1C821C2EBB0003ACD4A /* ViewController6.swift */; };
+		1A47D1CB21C2EBD3003ACD4A /* ViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47D1CA21C2EBD3003ACD4A /* ViewController7.swift */; };
+		1A47D1CD21C70931003ACD4A /* aaa.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1CC21C70931003ACD4A /* aaa.txt */; };
+		1A47D1CF21C70949003ACD4A /* bbb.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1CE21C70949003ACD4A /* bbb.txt */; };
+		1A47D1D121C70972003ACD4A /* ccc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1D021C70972003ACD4A /* ccc.txt */; };
+		1A47D1D321C709A9003ACD4A /* ddd.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1D221C709A9003ACD4A /* ddd.txt */; };
+		1A47D1D521C709C2003ACD4A /* eee.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1D421C709C2003ACD4A /* eee.txt */; };
+		1A47D1D721C709E0003ACD4A /* ggg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1D621C709E0003ACD4A /* ggg.txt */; };
+		1A47D1D921C709F9003ACD4A /* hhh.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1D821C709F9003ACD4A /* hhh.txt */; };
+		1A47D1DB21C70A13003ACD4A /* iii.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1DA21C70A13003ACD4A /* iii.txt */; };
+		1A47D1DD21C70A2B003ACD4A /* tyh.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1DC21C70A2B003ACD4A /* tyh.txt */; };
+		1A47D1DF21C70A46003ACD4A /* jjj.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1DE21C70A46003ACD4A /* jjj.txt */; };
+		1A47D1E321C7E9CC003ACD4A /* ViewController9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47D1E221C7E9CC003ACD4A /* ViewController9.swift */; };
+		1A47D1EB21C7EED8003ACD4A /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47D1EA21C7EED8003ACD4A /* question.swift */; };
+		1A47D1ED21C7EEEB003ACD4A /* questionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47D1EC21C7EEEA003ACD4A /* questionBank.swift */; };
+		1A47D1F321C7F6A4003ACD4A /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A47D1F121C7F6A3003ACD4A /* ProgressHUD.m */; };
+		1A47D1F421C7F6A4003ACD4A /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A47D1F221C7F6A4003ACD4A /* ProgressHUD.bundle */; };
+		1AF4573F21BE971B00C5D37A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4573E21BE971B00C5D37A /* AppDelegate.swift */; };
+		1AF4574121BE971B00C5D37A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4574021BE971B00C5D37A /* ViewController.swift */; };
+		1AF4574421BE971B00C5D37A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4574221BE971B00C5D37A /* Main.storyboard */; };
+		1AF4574621BE971B00C5D37A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4574521BE971B00C5D37A /* Assets.xcassets */; };
+		1AF4574921BE971B00C5D37A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4574721BE971B00C5D37A /* LaunchScreen.storyboard */; };
+		1AF4575721BFF42600C5D37A /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4575621BFF42600C5D37A /* ViewController2.swift */; };
+		1AF4575921BFF4C600C5D37A /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4575821BFF4C600C5D37A /* ViewController3.swift */; };
+		1AF4575B21BFF52400C5D37A /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4575A21BFF52400C5D37A /* ViewController4.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A47D17821C2AB9F003ACD4A /* passiveStructures.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = passiveStructures.txt; sourceTree = "<group>"; };
+		1A47D17A21C2AD2A003ACD4A /* simplePresent.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = simplePresent.txt; sourceTree = "<group>"; };
+		1A47D17C21C2AFB0003ACD4A /* presentPerfect.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = presentPerfect.txt; sourceTree = "<group>"; };
+		1A47D17E21C2B11B003ACD4A /* modalsI.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = modalsI.txt; sourceTree = "<group>"; };
+		1A47D18021C2B14F003ACD4A /* modalsII.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = modalsII.txt; sourceTree = "<group>"; };
+		1A47D18221C2B24D003ACD4A /* presentContinuous.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = presentContinuous.txt; sourceTree = "<group>"; };
+		1A47D18421C2B27D003ACD4A /* simplePast.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = simplePast.txt; sourceTree = "<group>"; };
+		1A47D18621C2B581003ACD4A /* pastperfect.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pastperfect.txt; sourceTree = "<group>"; };
+		1A47D18821C2B5AA003ACD4A /* pastCon.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pastCon.txt; sourceTree = "<group>"; };
+		1A47D18A21C2B5DC003ACD4A /* pastPerfectCon.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pastPerfectCon.txt; sourceTree = "<group>"; };
+		1A47D18C21C2B636003ACD4A /* simpleFuture.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = simpleFuture.txt; sourceTree = "<group>"; };
+		1A47D18E21C2B65D003ACD4A /* futurePerfect.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = futurePerfect.txt; sourceTree = "<group>"; };
+		1A47D19021C2B684003ACD4A /* futureCon.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = futureCon.txt; sourceTree = "<group>"; };
+		1A47D19221C2B6A7003ACD4A /* futurePerfectCon.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = futurePerfectCon.txt; sourceTree = "<group>"; };
+		1A47D19421C2B790003ACD4A /* presentPerfectCon.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = presentPerfectCon.txt; sourceTree = "<group>"; };
+		1A47D19621C2B9BD003ACD4A /* modalsIII.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = modalsIII.txt; sourceTree = "<group>"; };
+		1A47D19821C2B9E4003ACD4A /* modalsIV.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = modalsIV.txt; sourceTree = "<group>"; };
+		1A47D19A21C2BA01003ACD4A /* modalsV.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = modalsV.txt; sourceTree = "<group>"; };
+		1A47D19C21C2BA23003ACD4A /* usedToWould.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = usedToWould.txt; sourceTree = "<group>"; };
+		1A47D19E21C2BA48003ACD4A /* otherModals.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = otherModals.txt; sourceTree = "<group>"; };
+		1A47D1A021C2CA72003ACD4A /* if.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = if.txt; sourceTree = "<group>"; };
+		1A47D1A221C2CAA1003ACD4A /* wish.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = wish.txt; sourceTree = "<group>"; };
+		1A47D1A421C2CB54003ACD4A /* noun.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = noun.txt; sourceTree = "<group>"; };
+		1A47D1A621C2CBF9003ACD4A /* reportedSpeech.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reportedSpeech.txt; sourceTree = "<group>"; };
+		1A47D1A821C2CC5E003ACD4A /* gerund.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = gerund.txt; sourceTree = "<group>"; };
+		1A47D1AA21C2CC80003ACD4A /* infinitive.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = infinitive.txt; sourceTree = "<group>"; };
+		1A47D1AC21C2CDA8003ACD4A /* adj.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = adj.txt; sourceTree = "<group>"; };
+		1A47D1AE21C2CDC3003ACD4A /* adv.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = adv.txt; sourceTree = "<group>"; };
+		1A47D1B021C2CDE5003ACD4A /* par.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = par.txt; sourceTree = "<group>"; };
+		1A47D1B221C2CE07003ACD4A /* comp.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = comp.txt; sourceTree = "<group>"; };
+		1A47D1B421C2CE6B003ACD4A /* nouns.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = nouns.txt; sourceTree = "<group>"; };
+		1A47D1B621C2CE8B003ACD4A /* pronouns.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pronouns.txt; sourceTree = "<group>"; };
+		1A47D1B821C2CEA8003ACD4A /* articles.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = articles.txt; sourceTree = "<group>"; };
+		1A47D1BA21C2CEC1003ACD4A /* quan.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = quan.txt; sourceTree = "<group>"; };
+		1A47D1BC21C2CF13003ACD4A /* relative.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = relative.txt; sourceTree = "<group>"; };
+		1A47D1BE21C2CF2D003ACD4A /* adverb.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = adverb.txt; sourceTree = "<group>"; };
+		1A47D1C021C2CF7B003ACD4A /* conj.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = conj.txt; sourceTree = "<group>"; };
+		1A47D1C221C2CFAF003ACD4A /* prepo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = prepo.txt; sourceTree = "<group>"; };
+		1A47D1C421C2D048003ACD4A /* phrasal.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = phrasal.txt; sourceTree = "<group>"; };
+		1A47D1C621C2EB7A003ACD4A /* ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
+		1A47D1C821C2EBB0003ACD4A /* ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController6.swift; sourceTree = "<group>"; };
+		1A47D1CA21C2EBD3003ACD4A /* ViewController7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController7.swift; sourceTree = "<group>"; };
+		1A47D1CC21C70931003ACD4A /* aaa.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = aaa.txt; sourceTree = "<group>"; };
+		1A47D1CE21C70949003ACD4A /* bbb.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = bbb.txt; sourceTree = "<group>"; };
+		1A47D1D021C70972003ACD4A /* ccc.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccc.txt; sourceTree = "<group>"; };
+		1A47D1D221C709A9003ACD4A /* ddd.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ddd.txt; sourceTree = "<group>"; };
+		1A47D1D421C709C2003ACD4A /* eee.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = eee.txt; sourceTree = "<group>"; };
+		1A47D1D621C709E0003ACD4A /* ggg.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ggg.txt; sourceTree = "<group>"; };
+		1A47D1D821C709F9003ACD4A /* hhh.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = hhh.txt; sourceTree = "<group>"; };
+		1A47D1DA21C70A13003ACD4A /* iii.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = iii.txt; sourceTree = "<group>"; };
+		1A47D1DC21C70A2B003ACD4A /* tyh.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tyh.txt; sourceTree = "<group>"; };
+		1A47D1DE21C70A46003ACD4A /* jjj.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = jjj.txt; sourceTree = "<group>"; };
+		1A47D1E221C7E9CC003ACD4A /* ViewController9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController9.swift; sourceTree = "<group>"; };
+		1A47D1EA21C7EED8003ACD4A /* question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = question.swift; sourceTree = "<group>"; };
+		1A47D1EC21C7EEEA003ACD4A /* questionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionBank.swift; sourceTree = "<group>"; };
+		1A47D1EF21C7F6A3003ACD4A /* MyFashionApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFashionApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A47D1F021C7F6A3003ACD4A /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		1A47D1F121C7F6A3003ACD4A /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		1A47D1F221C7F6A4003ACD4A /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		1AF4573B21BE971B00C5D37A /* MyFashionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFashionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF4573E21BE971B00C5D37A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AF4574021BE971B00C5D37A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AF4574321BE971B00C5D37A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AF4574521BE971B00C5D37A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AF4574821BE971B00C5D37A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AF4574A21BE971B00C5D37A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF4575621BFF42600C5D37A /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		1AF4575821BFF4C600C5D37A /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		1AF4575A21BFF52400C5D37A /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AF4573821BE971B00C5D37A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A47D1E621C7ED8E003ACD4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4573E21BE971B00C5D37A /* AppDelegate.swift */,
+				1AF4574021BE971B00C5D37A /* ViewController.swift */,
+				1AF4575621BFF42600C5D37A /* ViewController2.swift */,
+				1AF4575821BFF4C600C5D37A /* ViewController3.swift */,
+				1AF4575A21BFF52400C5D37A /* ViewController4.swift */,
+				1A47D1C621C2EB7A003ACD4A /* ViewController5.swift */,
+				1A47D1C821C2EBB0003ACD4A /* ViewController6.swift */,
+				1A47D1CA21C2EBD3003ACD4A /* ViewController7.swift */,
+				1A47D1E221C7E9CC003ACD4A /* ViewController9.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A47D1E721C7EDC9003ACD4A /* English */ = {
+			isa = PBXGroup;
+			children = (
+				1A47D17C21C2AFB0003ACD4A /* presentPerfect.txt */,
+				1A47D18221C2B24D003ACD4A /* presentContinuous.txt */,
+				1A47D18421C2B27D003ACD4A /* simplePast.txt */,
+				1A47D18621C2B581003ACD4A /* pastperfect.txt */,
+				1A47D18821C2B5AA003ACD4A /* pastCon.txt */,
+				1A47D18A21C2B5DC003ACD4A /* pastPerfectCon.txt */,
+				1A47D18C21C2B636003ACD4A /* simpleFuture.txt */,
+				1A47D18E21C2B65D003ACD4A /* futurePerfect.txt */,
+				1A47D19021C2B684003ACD4A /* futureCon.txt */,
+				1A47D19221C2B6A7003ACD4A /* futurePerfectCon.txt */,
+				1A47D19421C2B790003ACD4A /* presentPerfectCon.txt */,
+				1A47D17E21C2B11B003ACD4A /* modalsI.txt */,
+				1A47D18021C2B14F003ACD4A /* modalsII.txt */,
+				1A47D19621C2B9BD003ACD4A /* modalsIII.txt */,
+				1A47D19821C2B9E4003ACD4A /* modalsIV.txt */,
+				1A47D19A21C2BA01003ACD4A /* modalsV.txt */,
+				1A47D19C21C2BA23003ACD4A /* usedToWould.txt */,
+				1A47D19E21C2BA48003ACD4A /* otherModals.txt */,
+				1A47D17821C2AB9F003ACD4A /* passiveStructures.txt */,
+				1A47D1A021C2CA72003ACD4A /* if.txt */,
+				1A47D1A221C2CAA1003ACD4A /* wish.txt */,
+				1A47D1A421C2CB54003ACD4A /* noun.txt */,
+				1A47D1A621C2CBF9003ACD4A /* reportedSpeech.txt */,
+				1A47D17A21C2AD2A003ACD4A /* simplePresent.txt */,
+				1A47D1A821C2CC5E003ACD4A /* gerund.txt */,
+				1A47D1AA21C2CC80003ACD4A /* infinitive.txt */,
+				1A47D1AC21C2CDA8003ACD4A /* adj.txt */,
+				1A47D1AE21C2CDC3003ACD4A /* adv.txt */,
+				1A47D1B021C2CDE5003ACD4A /* par.txt */,
+				1A47D1B221C2CE07003ACD4A /* comp.txt */,
+				1A47D1B421C2CE6B003ACD4A /* nouns.txt */,
+				1A47D1B621C2CE8B003ACD4A /* pronouns.txt */,
+				1A47D1B821C2CEA8003ACD4A /* articles.txt */,
+				1A47D1BA21C2CEC1003ACD4A /* quan.txt */,
+				1A47D1BC21C2CF13003ACD4A /* relative.txt */,
+				1A47D1BE21C2CF2D003ACD4A /* adverb.txt */,
+				1A47D1C021C2CF7B003ACD4A /* conj.txt */,
+				1A47D1C221C2CFAF003ACD4A /* prepo.txt */,
+				1A47D1C421C2D048003ACD4A /* phrasal.txt */,
+			);
+			path = English;
+			sourceTree = "<group>";
+		};
+		1A47D1E821C7EE4E003ACD4A /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				1A47D1CC21C70931003ACD4A /* aaa.txt */,
+				1A47D1CE21C70949003ACD4A /* bbb.txt */,
+				1A47D1D021C70972003ACD4A /* ccc.txt */,
+				1A47D1D221C709A9003ACD4A /* ddd.txt */,
+				1A47D1D421C709C2003ACD4A /* eee.txt */,
+				1A47D1D621C709E0003ACD4A /* ggg.txt */,
+				1A47D1D821C709F9003ACD4A /* hhh.txt */,
+				1A47D1DA21C70A13003ACD4A /* iii.txt */,
+				1A47D1DC21C70A2B003ACD4A /* tyh.txt */,
+				1A47D1DE21C70A46003ACD4A /* jjj.txt */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		1A47D1E921C7EE8A003ACD4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A47D1EA21C7EED8003ACD4A /* question.swift */,
+				1A47D1EC21C7EEEA003ACD4A /* questionBank.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A47D1EE21C7F3C1003ACD4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A47D1F221C7F6A4003ACD4A /* ProgressHUD.bundle */,
+				1A47D1F021C7F6A3003ACD4A /* ProgressHUD.h */,
+				1A47D1F121C7F6A3003ACD4A /* ProgressHUD.m */,
+				1A47D1EF21C7F6A3003ACD4A /* MyFashionApp-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AF4573221BE971B00C5D37A = {
+			isa = PBXGroup;
+			children = (
+				1AF4573D21BE971B00C5D37A /* MyFashionApp */,
+				1AF4573C21BE971B00C5D37A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AF4573C21BE971B00C5D37A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4573B21BE971B00C5D37A /* MyFashionApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AF4573D21BE971B00C5D37A /* MyFashionApp */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4574A21BE971B00C5D37A /* Info.plist */,
+				1AF4574221BE971B00C5D37A /* Main.storyboard */,
+				1AF4574721BE971B00C5D37A /* LaunchScreen.storyboard */,
+				1AF4574521BE971B00C5D37A /* Assets.xcassets */,
+				1A47D1E621C7ED8E003ACD4A /* Controller */,
+				1A47D1E921C7EE8A003ACD4A /* Model */,
+				1A47D1EE21C7F3C1003ACD4A /* Supporting Files */,
+				1A47D1E721C7EDC9003ACD4A /* English */,
+				1A47D1E821C7EE4E003ACD4A /* Stories */,
+			);
+			path = MyFashionApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AF4573A21BE971B00C5D37A /* MyFashionApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AF4574D21BE971B00C5D37A /* Build configuration list for PBXNativeTarget "MyFashionApp" */;
+			buildPhases = (
+				1AF4573721BE971B00C5D37A /* Sources */,
+				1AF4573821BE971B00C5D37A /* Frameworks */,
+				1AF4573921BE971B00C5D37A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFashionApp;
+			productName = MyFashionApp;
+			productReference = 1AF4573B21BE971B00C5D37A /* MyFashionApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AF4573321BE971B00C5D37A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Sevde Özoğlu";
+				TargetAttributes = {
+					1AF4573A21BE971B00C5D37A = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1AF4573621BE971B00C5D37A /* Build configuration list for PBXProject "MyFashionApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AF4573221BE971B00C5D37A;
+			productRefGroup = 1AF4573C21BE971B00C5D37A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AF4573A21BE971B00C5D37A /* MyFashionApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AF4573921BE971B00C5D37A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A47D1CD21C70931003ACD4A /* aaa.txt in Resources */,
+				1A47D19F21C2BA48003ACD4A /* otherModals.txt in Resources */,
+				1A47D18121C2B14F003ACD4A /* modalsII.txt in Resources */,
+				1A47D19921C2B9E4003ACD4A /* modalsIV.txt in Resources */,
+				1A47D19D21C2BA23003ACD4A /* usedToWould.txt in Resources */,
+				1A47D1C521C2D048003ACD4A /* phrasal.txt in Resources */,
+				1A47D1D721C709E0003ACD4A /* ggg.txt in Resources */,
+				1A47D1F421C7F6A4003ACD4A /* ProgressHUD.bundle in Resources */,
+				1A47D1C121C2CF7B003ACD4A /* conj.txt in Resources */,
+				1A47D1D321C709A9003ACD4A /* ddd.txt in Resources */,
+				1A47D1CF21C70949003ACD4A /* bbb.txt in Resources */,
+				1A47D1B121C2CDE5003ACD4A /* par.txt in Resources */,
+				1A47D1D121C70972003ACD4A /* ccc.txt in Resources */,
+				1AF4574921BE971B00C5D37A /* LaunchScreen.storyboard in Resources */,
+				1A47D1A321C2CAA1003ACD4A /* wish.txt in Resources */,
+				1A47D19121C2B684003ACD4A /* futureCon.txt in Resources */,
+				1A47D17921C2AB9F003ACD4A /* passiveStructures.txt in Resources */,
+				1A47D18D21C2B636003ACD4A /* simpleFuture.txt in Resources */,
+				1A47D19521C2B790003ACD4A /* presentPerfectCon.txt in Resources */,
+				1A47D1B721C2CE8B003ACD4A /* pronouns.txt in Resources */,
+				1A47D18721C2B581003ACD4A /* pastperfect.txt in Resources */,
+				1A47D1BF21C2CF2D003ACD4A /* adverb.txt in Resources */,
+				1A47D1D521C709C2003ACD4A /* eee.txt in Resources */,
+				1A47D1DB21C70A13003ACD4A /* iii.txt in Resources */,
+				1A47D18321C2B24E003ACD4A /* presentContinuous.txt in Resources */,
+				1A47D1A521C2CB54003ACD4A /* noun.txt in Resources */,
+				1A47D1AB21C2CC80003ACD4A /* infinitive.txt in Resources */,
+				1A47D1A921C2CC5E003ACD4A /* gerund.txt in Resources */,
+				1A47D1DF21C70A46003ACD4A /* jjj.txt in Resources */,
+				1A47D1B521C2CE6B003ACD4A /* nouns.txt in Resources */,
+				1A47D19321C2B6A7003ACD4A /* futurePerfectCon.txt in Resources */,
+				1A47D1C321C2CFAF003ACD4A /* prepo.txt in Resources */,
+				1A47D1A721C2CBF9003ACD4A /* reportedSpeech.txt in Resources */,
+				1A47D18521C2B27D003ACD4A /* simplePast.txt in Resources */,
+				1A47D1D921C709F9003ACD4A /* hhh.txt in Resources */,
+				1A47D1BB21C2CEC1003ACD4A /* quan.txt in Resources */,
+				1A47D1BD21C2CF13003ACD4A /* relative.txt in Resources */,
+				1A47D1AD21C2CDA8003ACD4A /* adj.txt in Resources */,
+				1A47D18B21C2B5DC003ACD4A /* pastPerfectCon.txt in Resources */,
+				1A47D17D21C2AFB0003ACD4A /* presentPerfect.txt in Resources */,
+				1A47D1A121C2CA72003ACD4A /* if.txt in Resources */,
+				1A47D1B921C2CEA8003ACD4A /* articles.txt in Resources */,
+				1A47D19721C2B9BD003ACD4A /* modalsIII.txt in Resources */,
+				1A47D18F21C2B65D003ACD4A /* futurePerfect.txt in Resources */,
+				1A47D17B21C2AD2A003ACD4A /* simplePresent.txt in Resources */,
+				1A47D19B21C2BA01003ACD4A /* modalsV.txt in Resources */,
+				1AF4574621BE971B00C5D37A /* Assets.xcassets in Resources */,
+				1A47D1B321C2CE07003ACD4A /* comp.txt in Resources */,
+				1A47D18921C2B5AA003ACD4A /* pastCon.txt in Resources */,
+				1A47D17F21C2B11B003ACD4A /* modalsI.txt in Resources */,
+				1A47D1DD21C70A2B003ACD4A /* tyh.txt in Resources */,
+				1AF4574421BE971B00C5D37A /* Main.storyboard in Resources */,
+				1A47D1AF21C2CDC3003ACD4A /* adv.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AF4573721BE971B00C5D37A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A47D1EB21C7EED8003ACD4A /* question.swift in Sources */,
+				1A47D1F321C7F6A4003ACD4A /* ProgressHUD.m in Sources */,
+				1AF4574121BE971B00C5D37A /* ViewController.swift in Sources */,
+				1AF4573F21BE971B00C5D37A /* AppDelegate.swift in Sources */,
+				1A47D1E321C7E9CC003ACD4A /* ViewController9.swift in Sources */,
+				1A47D1C921C2EBB0003ACD4A /* ViewController6.swift in Sources */,
+				1A47D1ED21C7EEEB003ACD4A /* questionBank.swift in Sources */,
+				1AF4575921BFF4C600C5D37A /* ViewController3.swift in Sources */,
+				1AF4575721BFF42600C5D37A /* ViewController2.swift in Sources */,
+				1A47D1C721C2EB7A003ACD4A /* ViewController5.swift in Sources */,
+				1A47D1CB21C2EBD3003ACD4A /* ViewController7.swift in Sources */,
+				1AF4575B21BFF52400C5D37A /* ViewController4.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1AF4574221BE971B00C5D37A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AF4574321BE971B00C5D37A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AF4574721BE971B00C5D37A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AF4574821BE971B00C5D37A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AF4574B21BE971B00C5D37A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1AF4574C21BE971B00C5D37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AF4574E21BE971B00C5D37A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD4RG69H7Y;
+				INFOPLIST_FILE = MyFashionApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevdeozoglu.MyFashionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyFashionApp/Supporting Files/MyFashionApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AF4574F21BE971B00C5D37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD4RG69H7Y;
+				INFOPLIST_FILE = MyFashionApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevdeozoglu.MyFashionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyFashionApp/Supporting Files/MyFashionApp-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AF4573621BE971B00C5D37A /* Build configuration list for PBXProject "MyFashionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF4574B21BE971B00C5D37A /* Debug */,
+				1AF4574C21BE971B00C5D37A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AF4574D21BE971B00C5D37A /* Build configuration list for PBXNativeTarget "MyFashionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF4574E21BE971B00C5D37A /* Debug */,
+				1AF4574F21BE971B00C5D37A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AF4573321BE971B00C5D37A /* Project object */;
+}

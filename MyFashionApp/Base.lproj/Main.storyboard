@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Regular</string>
+        </array>
+        <array key="Chalkduster.ttf">
+            <string>Chalkduster</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFashionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ree-fC-Iw9" userLabel="quizButton">
+                                <rect key="frame" x="0.0" y="320" width="375" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="Quiz">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQe-Kj-8eK"/>
+                                    <segue destination="NOB-bj-u2J" kind="show" identifier="quizSegue" id="Jal-hP-IAB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au4-Lt-40K" userLabel="storiesButton">
+                                <rect key="frame" x="0.0" y="249" width="375" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="Short stories">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="storiesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eC2-6g-Tdn"/>
+                                    <segue destination="Ubm-Fr-4Jf" kind="show" identifier="shortStoriesSegue" id="I7e-nA-SzJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFj-sh-1Wf" userLabel="tasksButton">
+                                <rect key="frame" x="0.0" y="391" width="375" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="Daily Tasks">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tasksButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="08g-1B-aCC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57X-LE-kfB" userLabel="mistakesButton">
+                                <rect key="frame" x="0.0" y="462" width="375" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="Mistakes Made By Learners">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mistakesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZBy-0J-R7V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfD-DY-sLP" userLabel="grammarButton">
+                                <rect key="frame" x="0.0" y="178" width="375" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="English Grammar">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="grammarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ra-w9-hbL"/>
+                                    <segue destination="wvy-8J-c3f" kind="show" identifier="englishGrammar" id="XN1-wF-kju"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bai-36-1Qs" userLabel="nativesButton">
+                                <rect key="frame" x="0.0" y="533" width="375" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="To Understand The Natives">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nativesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwE-6f-5RA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPd-lc-vHq" userLabel="dicButton">
+                                <rect key="frame" x="0.0" y="604" width="375" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="Dictionary">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AF0-k2-Djb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Learn English!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdY-Js-11m" userLabel="titleButton">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-791" y="116"/>
+        </scene>
+        <!--View Controller5-->
+        <scene sceneID="ppt-TB-azJ">
+            <objects>
+                <viewController id="Ubm-Fr-4Jf" customClass="ViewController5" customModule="MyFashionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xfj-dw-4Yt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Short Stories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck6-W1-SlJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsg-JZ-gqJ">
+                                <rect key="frame" x="0.0" y="271" width="375" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <state key="normal" title="Low Intermediate">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="lowIntBtn:" destination="Ubm-Fr-4Jf" eventType="touchUpInside" id="z0g-al-9vB"/>
+                                    <segue destination="zhb-jv-nll" kind="show" identifier="low" id="31K-69-8sm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmy-Ga-jxa">
+                                <rect key="frame" x="0.0" y="457" width="375" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <state key="normal" title="Advanced">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="advancedBtn:" destination="Ubm-Fr-4Jf" eventType="touchUpInside" id="FF9-M9-8KZ"/>
+                                    <segue destination="zhb-jv-nll" kind="show" identifier="advanced" id="if4-VC-W4Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdm-ou-DfL">
+                                <rect key="frame" x="0.0" y="178" width="375" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <state key="normal" title="Beginner">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginnerBtn:" destination="Ubm-Fr-4Jf" eventType="touchUpInside" id="T9Z-Uo-Qph"/>
+                                    <segue destination="zhb-jv-nll" kind="show" identifier="beginner" id="N7Y-mD-3aB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8c-XZ-cVC">
+                                <rect key="frame" x="0.0" y="364" width="375" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <state key="normal" title="Intermediate">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="intermBtn:" destination="Ubm-Fr-4Jf" eventType="touchUpInside" id="V6D-Bt-U8x"/>
+                                    <segue destination="zhb-jv-nll" kind="show" identifier="intermediate" id="0DE-DT-1Iu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cul-zk-htd">
+                                <rect key="frame" x="0.0" y="550" width="375" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToMain:" destination="Ubm-Fr-4Jf" eventType="touchUpInside" id="pgG-09-7hv"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="backToMainMenu" id="8xT-dA-Cax"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="uHj-dA-iQb"/>
+                    </view>
+                    <connections>
+                        <outlet property="LabelBtn1" destination="Cdm-ou-DfL" id="Wvv-nw-at8"/>
+                        <outlet property="advanced2Btn" destination="Rmy-Ga-jxa" id="PyW-IC-fZY"/>
+                        <outlet property="intermediateBtn" destination="Y8c-XZ-cVC" id="NZm-DC-9Pm"/>
+                        <outlet property="lowInt2Btn" destination="hsg-JZ-gqJ" id="q43-3n-ZCd"/>
+                        <outlet property="shortStories" destination="Ck6-W1-SlJ" id="BSf-Fb-3x1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoO-n1-hZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-791.20000000000005" y="848.72563718140941"/>
+        </scene>
+        <!--View Controller9-->
+        <scene sceneID="BF8-Fo-p0X">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWY-iF-sp4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="NOB-bj-u2J" customClass="ViewController9" customModule="MyFashionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E8n-aG-dfu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggz-sn-HOv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="345"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAm-41-dQp">
+                                        <rect key="frame" x="16" y="28" width="343" height="290"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                        <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RAm-41-dQp" secondAttribute="trailing" constant="16" id="1MO-Sb-pmo"/>
+                                    <constraint firstItem="RAm-41-dQp" firstAttribute="top" secondItem="Ggz-sn-HOv" secondAttribute="top" constant="28" id="G75-jq-zia"/>
+                                    <constraint firstItem="RAm-41-dQp" firstAttribute="leading" secondItem="Ggz-sn-HOv" secondAttribute="leading" constant="16" id="Tyz-jA-ti4"/>
+                                    <constraint firstAttribute="bottom" secondItem="RAm-41-dQp" secondAttribute="bottom" constant="27" id="YhO-1G-quQ"/>
+                                    <constraint firstAttribute="height" constant="345" id="rZf-xL-Q4k"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B8S-zx-ZwO">
+                                <rect key="frame" x="25" y="375" width="325" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0J-Ew-7lv">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="50"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                        <state key="normal" title="True !">
+                                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="trueButton:" destination="NOB-bj-u2J" eventType="touchUpInside" id="9tV-UC-VYE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hh-Pd-ZAd">
+                                        <rect key="frame" x="167.5" y="0.0" width="157.5" height="50"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                        <state key="normal" title="False !">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="trueButton:" destination="NOB-bj-u2J" eventType="touchUpInside" id="8YO-bO-uRI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7C-Av-xEr">
+                                <rect key="frame" x="0.0" y="620" width="375" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X/Y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDs-py-GkJ">
+                                        <rect key="frame" x="8" y="0.0" width="52" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="HUM-y2-n6v"/>
+                                            <constraint firstAttribute="height" constant="21" id="uqG-KE-Qqy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFe-Mt-ymb">
+                                        <rect key="frame" x="0.0" y="33" width="24" height="14"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="progressBar"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="6AN-y7-34t"/>
+                                            <constraint firstAttribute="height" constant="14" id="zeM-xq-hnA"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 9999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jc3-e2-C0u">
+                                        <rect key="frame" x="251" y="0.0" width="116" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="YVM-ly-9bi"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="zrV-jD-6a2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VDs-py-GkJ" firstAttribute="top" secondItem="a7C-Av-xEr" secondAttribute="top" id="OnN-5G-Y9H"/>
+                                    <constraint firstItem="jc3-e2-C0u" firstAttribute="top" secondItem="a7C-Av-xEr" secondAttribute="top" id="PTZ-Uv-IcF"/>
+                                    <constraint firstAttribute="height" constant="47" id="QAG-2D-zgZ"/>
+                                    <constraint firstItem="sFe-Mt-ymb" firstAttribute="leading" secondItem="a7C-Av-xEr" secondAttribute="leading" id="R8k-bO-4mR"/>
+                                    <constraint firstAttribute="bottom" secondItem="sFe-Mt-ymb" secondAttribute="bottom" id="Ycb-jq-kVX"/>
+                                    <constraint firstAttribute="trailing" secondItem="jc3-e2-C0u" secondAttribute="trailing" constant="8" id="iKW-vC-ghW"/>
+                                    <constraint firstItem="jc3-e2-C0u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VDs-py-GkJ" secondAttribute="trailing" constant="20" id="lE8-al-QzS"/>
+                                    <constraint firstItem="VDs-py-GkJ" firstAttribute="leading" secondItem="a7C-Av-xEr" secondAttribute="leading" constant="8" id="wjI-dq-93S"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qd-AG-g3k">
+                                <rect key="frame" x="0.0" y="478" width="187.5" height="84"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Back!">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mainBackButton:" destination="NOB-bj-u2J" eventType="touchUpInside" id="0Ps-Zo-bL0"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="mainBackSegue" id="hNi-ka-T0p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5x-B1-N9t">
+                                <rect key="frame" x="187" y="478" width="188" height="84"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Go It!">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goThisNumber:" destination="NOB-bj-u2J" eventType="touchUpInside" id="PlF-dL-MZj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a7C-Av-xEr" firstAttribute="bottom" secondItem="0LC-7c-DQu" secondAttribute="bottom" id="48k-hB-SiZ"/>
+                            <constraint firstItem="5Qd-AG-g3k" firstAttribute="leading" secondItem="0LC-7c-DQu" secondAttribute="leading" id="CWV-if-wCe"/>
+                            <constraint firstItem="Ggz-sn-HOv" firstAttribute="top" secondItem="E8n-aG-dfu" secondAttribute="top" id="H8W-g8-zRf"/>
+                            <constraint firstItem="Ggz-sn-HOv" firstAttribute="trailing" secondItem="0LC-7c-DQu" secondAttribute="trailing" id="Jfl-AC-NSJ"/>
+                            <constraint firstItem="a7C-Av-xEr" firstAttribute="top" secondItem="e5x-B1-N9t" secondAttribute="bottom" constant="58" id="LHs-TV-LvA"/>
+                            <constraint firstItem="B8S-zx-ZwO" firstAttribute="top" secondItem="Ggz-sn-HOv" secondAttribute="bottom" constant="30" id="N3R-8Y-wjB"/>
+                            <constraint firstItem="e5x-B1-N9t" firstAttribute="trailing" secondItem="0LC-7c-DQu" secondAttribute="trailing" id="OOf-7S-BG1"/>
+                            <constraint firstItem="e5x-B1-N9t" firstAttribute="leading" secondItem="0LC-7c-DQu" secondAttribute="leading" constant="187" id="PqV-KW-Km7"/>
+                            <constraint firstItem="a7C-Av-xEr" firstAttribute="top" secondItem="B8S-zx-ZwO" secondAttribute="bottom" constant="195" id="SKn-NR-4fm"/>
+                            <constraint firstItem="a7C-Av-xEr" firstAttribute="trailing" secondItem="0LC-7c-DQu" secondAttribute="trailing" id="WkX-XH-0gm"/>
+                            <constraint firstItem="0LC-7c-DQu" firstAttribute="trailing" secondItem="B8S-zx-ZwO" secondAttribute="trailing" constant="25" id="X4w-ef-bMg"/>
+                            <constraint firstItem="0LC-7c-DQu" firstAttribute="trailing" secondItem="5Qd-AG-g3k" secondAttribute="trailing" constant="187.5" id="XeU-P5-rGS"/>
+                            <constraint firstItem="B8S-zx-ZwO" firstAttribute="top" secondItem="Ggz-sn-HOv" secondAttribute="bottom" constant="30" id="ai9-cY-BFZ"/>
+                            <constraint firstItem="a7C-Av-xEr" firstAttribute="leading" secondItem="0LC-7c-DQu" secondAttribute="leading" id="bc7-VO-vGK"/>
+                            <constraint firstItem="a7C-Av-xEr" firstAttribute="top" secondItem="B8S-zx-ZwO" secondAttribute="bottom" constant="195" id="dRj-iG-Ico"/>
+                            <constraint firstItem="B8S-zx-ZwO" firstAttribute="leading" secondItem="0LC-7c-DQu" secondAttribute="leading" constant="25" id="dVb-8e-8Os"/>
+                            <constraint firstItem="Ggz-sn-HOv" firstAttribute="leading" secondItem="0LC-7c-DQu" secondAttribute="leading" id="gLj-fC-O1y"/>
+                            <constraint firstItem="5Qd-AG-g3k" firstAttribute="top" secondItem="B8S-zx-ZwO" secondAttribute="bottom" constant="53" id="p6w-zM-LSZ"/>
+                            <constraint firstItem="e5x-B1-N9t" firstAttribute="top" secondItem="B8S-zx-ZwO" secondAttribute="bottom" constant="53" id="pAD-Ew-abL"/>
+                            <constraint firstItem="a7C-Av-xEr" firstAttribute="top" secondItem="5Qd-AG-g3k" secondAttribute="bottom" constant="58" id="zXy-FV-kdD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0LC-7c-DQu"/>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="VDs-py-GkJ" id="GYG-9S-kLb"/>
+                        <outlet property="mainBackButoon" destination="5Qd-AG-g3k" id="k6e-21-pSa"/>
+                        <outlet property="progressBar" destination="sFe-Mt-ymb" id="R6D-Lp-pvn"/>
+                        <outlet property="questionLabel" destination="RAm-41-dQp" id="Erv-iA-LwZ"/>
+                        <outlet property="scoreLabel" destination="jc3-e2-C0u" id="6t2-3e-93f"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-791.20000000000005" y="1563.8680659670167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xya-k9-kGe">
+            <objects>
+                <viewController id="KaG-G1-mTh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VBh-MB-Q8Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Bly-0X-N5K"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzC-7N-uAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="1564"/>
+        </scene>
+        <!--View Controller6-->
+        <scene sceneID="Tpa-ZN-wWK">
+            <objects>
+                <viewController id="zhb-jv-nll" customClass="ViewController6" customModule="MyFashionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U7J-w1-8qT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7n-TK-py8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FXm-fg-KU8">
+                                <rect key="frame" x="0.0" y="170" width="375" height="437"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxs-7g-ny5">
+                                <rect key="frame" x="0.0" y="607" width="187.5" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="storiesBackBtn:" destination="zhb-jv-nll" eventType="touchUpInside" id="KHL-Pc-NLs"/>
+                                    <segue destination="Ubm-Fr-4Jf" kind="show" identifier="2back2" id="vrq-Vf-rOk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUE-Ai-Rce">
+                                <rect key="frame" x="187" y="607" width="187.5" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="storiesGoBtn:" destination="zhb-jv-nll" eventType="touchUpInside" id="Xyt-0R-mG7"/>
+                                    <segue destination="Qsy-tw-f2J" kind="show" identifier="2go2" id="YN2-TB-rlj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ISX-Sb-W6U"/>
+                    </view>
+                    <connections>
+                        <outlet property="storiesLabel" destination="e7n-TK-py8" id="A0G-rh-fhl"/>
+                        <outlet property="storiesPicker" destination="FXm-fg-KU8" id="Pi6-OM-uBB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqy-2n-XFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256.80000000000001" y="848.72563718140941"/>
+        </scene>
+        <!--View Controller7-->
+        <scene sceneID="Bg8-Sr-4qa">
+            <objects>
+                <viewController id="Qsy-tw-f2J" customClass="ViewController7" customModule="MyFashionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o51-82-0Uv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fys-8d-VwZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ftn-C4-daL">
+                                <rect key="frame" x="0.0" y="59" width="375" height="550"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeH-mO-1Uy">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stories2Back:" destination="Qsy-tw-f2J" eventType="touchUpInside" id="2Wv-zY-0hL"/>
+                                    <segue destination="zhb-jv-nll" kind="show" identifier="2back3" id="rs2-wE-OSY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="P3o-2g-p3W"/>
+                    </view>
+                    <connections>
+                        <outlet property="storiesTitleLabel" destination="fys-8d-VwZ" id="PsF-8D-JJk"/>
+                        <outlet property="storiesTxt" destination="ftn-C4-daL" id="FCk-Md-UKM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GTz-C1-PYU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="848.72563718140941"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="Xnd-Ub-f4H">
+            <objects>
+                <viewController id="wvy-8J-c3f" customClass="ViewController2" customModule="MyFashionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HBa-XM-N8k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="English Grammar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAg-TT-YlE" userLabel="grammarLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-GD-19U" userLabel="go1Button">
+                                <rect key="frame" x="0.0" y="607" width="187.5" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="go1Button:" destination="wvy-8J-c3f" eventType="touchUpInside" id="fxX-mK-y5c"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="go1Segue" id="4VI-Se-N4y"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rpY-GL-f4i" userLabel="grammarPicker">
+                                <rect key="frame" x="0.0" y="178" width="375" height="430"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmm-vt-Zc7">
+                                <rect key="frame" x="187" y="607" width="187.5" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBtn:" destination="wvy-8J-c3f" eventType="touchUpInside" id="RJK-N1-0yX"/>
+                                    <segue destination="4rG-1k-lKM" kind="show" identifier="go3VC" id="40k-W1-Yf3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2xw-rX-zOr"/>
+                    </view>
+                    <connections>
+                        <outlet property="grammarLabel" destination="kAg-TT-YlE" id="s40-s2-DvT"/>
+                        <outlet property="grammarPicker" destination="rpY-GL-f4i" id="Pb7-LL-eec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaK-Rx-dYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="116"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="H6N-WU-BsZ">
+            <objects>
+                <viewController id="4rG-1k-lKM" customClass="ViewController3" customModule="MyFashionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZGG-ye-0rR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tenses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izX-sy-4n7" userLabel="go1Label">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u4B-kA-jDr" userLabel="go1Picker">
+                                <rect key="frame" x="0.0" y="172" width="375" height="443"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRd-jg-fPJ" userLabel="go2Button">
+                                <rect key="frame" x="0.0" y="608" width="187.5" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="go2Button:" destination="4rG-1k-lKM" eventType="touchUpInside" id="XJ3-tS-Oqq"/>
+                                    <segue destination="wvy-8J-c3f" kind="show" identifier="go2Segue" id="E8Z-ki-G1n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a67-n4-EWJ">
+                                <rect key="frame" x="187" y="608" width="187.5" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBtn2:" destination="4rG-1k-lKM" eventType="touchUpInside" id="Qri-0j-fYr"/>
+                                    <segue destination="JSU-TO-Wv1" kind="show" identifier="finalSegue" id="NKu-wx-aOQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="LU6-od-dLn"/>
+                    </view>
+                    <connections>
+                        <outlet property="go1Label" destination="izX-sy-4n7" id="IVg-nA-Ghh"/>
+                        <outlet property="go1Picker" destination="u4B-kA-jDr" id="Vva-qs-HNX"/>
+                        <outlet property="goBtn2Outlet" destination="a67-n4-EWJ" id="OnP-9x-ff1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQR-V8-t3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="116"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="LxB-6G-daU">
+            <objects>
+                <viewController id="JSU-TO-Wv1" customClass="ViewController4" customModule="MyFashionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DJW-Oj-9Ws">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b1X-Ht-z0G" userLabel="go2Text">
+                                <rect key="frame" x="0.0" y="59" width="375" height="553"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">İngilizce’de simple present tense geniş zamanın karşılığıdır. Genelde alışkanlıklar, genel doğrular, tekrarlanan hareketler ve değişmeyen durumlar için kullanılır.
+
+Hareket belirten cümleler
+
+ I, You, We, They özneleri ile fiilin yalın hali kullanılır. 
+
+Cümle kurarken eğer özne I, you ,we veya they ise fiil yalın haliyle kullanılır. Örneğin,
+
+I run every weekend ( Her hafta sonu koşarım. )
+We play tennis every morning ( Her sabah tennis oynarız. )
+They talk too much. ( Çok fazla konuşurlar. )
+You scream when you get scared. ( korktuğun zaman bağırıyorsun/bağırırsın. )
+He, She, It özneleri ile fiil -s, -es veya -ies ile biter.
+
+Fiilin -s, es veya -ies den hangisiyle biteceği tamamen fiile bağlı.
+
+Eğer fiil ss, sh, ch, zz, x veya o ile bitiyorsa -es eki alır biter.
+Örneğin pass – passes olur, buzz – buzzes olur, go – goes olur, crash – crashes olur, fix – fixes olur.
+
+Eğer fiil sessiz harf + Y ile bitiyorsa -ies eki alır.
+Örneğin cry – cries olur, fry – fries olur, carry – carries, dry – dries olur
+
+Diğer fiiller -s eki alır.
+Örneğin play – plays olur, run – runs olur, stay – stays olur, jump – jumps olur.
+
+Örnek cümleler:
+
+He sleeps in this room. (Bu odada uyur. )
+My dog runs very fast. ( Köpeğim çok hızlı koşar. )
+Mert talks very fast. ( Mert çok hızlı konuşur. )
+She plays the piano. ( Piyano çalar. )
+My dog barks a lot ( Köpeğim çok havlar. )
+Durum belirten cümleler
+
+Simple present tense kullanarak durum belirten cümleler kurmak için Is ( to be ) yardımcı fiili kullanılır. To be, cümlenin öznelerine göre değişir.
+
+Cümlenin öznesi He, She veya It ise Is kullanılır.
+Cümlenin öznesi We, They , You ise Are kullanılır.
+Cümlenin öznesi I ise Am kullanılır.
+Örneğin,
+
+I am a good swimmer. ( İyi bir yüzücüyüm )
+We are engineers. ( Biz mühendisiz )
+They are best friends. ( Onlar yakın arkadaş. )
+He is happy. ( O mutlu/ O mutludur )
+She is a very nice person ( O çok iyi bir insan )
+You are very clever. ( Çok zekisin. )
+ 
+
+Simple Present tense olumsuz cümleler
+ 
+
+Durum cümlesini olumsuz yapmak
+
+İngilizce’de durum cümlesini olumsuz yapmak için To be yardımcı fiilinden sonra Not kelimesi getirilir. Örneğim hemen yukarıda verdiğim örnekleri olumsuz yapalım.
+
+I am not a good swimmer. (İyi bir yüzücü değilim. )
+We aren’t ( are not ) engineers. ( Biz mühendis değiliz. )
+They aren’t ( are not ) best friends. ( Onlar yakın arkadaş değiller. )
+He isn’t happy (O mutlu değil. )
+She isn’t ( is not ) a very nice person. (O çok iyi bir insan değil. )
+Hareket belirten cümleleri olumsuz yapmak
+
+Hareket belirten cümleleri olumsuz yapmak için Do Yardımcı fiili ve Not kullanılır.
+
+Eğer özne He, She, It ise Does not yani doesn’t kullanılır.
+Eğer Özne I, You, We, They ise Do not yani don’t kullanılır.
+Örneğin,
+
+He doesn’t like to swim. ( Yüzemeyi sevmez )
+We don’t work every day. ( Her gün çalışmayız. )
+I don’t eat pizza. (Pizza yemem. )
+My dog doesn’t bark a lot. (Köpeğim çok havlamaz. )
+Evet İngilizce’de simple present tense bu kadar. İzlediğin ve okuduğun için çok teşekkür ederim ve sonraki videolarda görüşmek üzere.</string>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJd-Ku-Zde">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="finalBtn:" destination="JSU-TO-Wv1" eventType="touchUpInside" id="Nsi-w9-xhA"/>
+                                    <segue destination="4rG-1k-lKM" kind="show" identifier="finalSegue2" id="0yl-XR-b7P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIMPLE PRESENT TENSE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9Y-4b-Mp2" userLabel="go2Label">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Kmx-wr-VTP"/>
+                    </view>
+                    <connections>
+                        <outlet property="go2Label" destination="a9Y-4b-Mp2" id="9qc-bV-lWv"/>
+                        <outlet property="go2Text" destination="b1X-Ht-z0G" id="C1z-Xu-kgJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="heU-gN-6Ci" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2237.5999999999999" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="40k-W1-Yf3"/>
+        <segue reference="XN1-wF-kju"/>
+        <segue reference="if4-VC-W4Q"/>
+        <segue reference="I7e-nA-SzJ"/>
+        <segue reference="hNi-ka-T0p"/>
+    </inferredMetricsTieBreakers>
+</document>
